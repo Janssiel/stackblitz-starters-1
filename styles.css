@@ -1,14 +1,13 @@
 :root {
-  --primary-color: #3498db;        
-  --secondary-color: #2ecc71;       
-  --accent-color: #e74c3c;          
-  --background-color: #ffffff;      
-  --text-color: #000000;            
-  --nav-link-color: #ffffff;      
-  --nav-link-current-bg: #d4d4d4;   
+  --primary-color: #0d0d0e;
+  --secondary-color: #3a3b3b;
+  --accent-color: #333232;
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --nav-link-color: #ffffff;
+  --nav-link-current-bg: #d4d4d4;
   --nav-link-current-color: #000000;
-  --nav-border-color: #aaa;      
-  
+  --nav-border-color: #aaa;
 }
 
 * {
@@ -22,6 +21,7 @@ body {
   background-color: var(--background-color);
 }
 
+/* NAVBAR */
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -45,28 +45,25 @@ nav a {
   transition: background-color 0.3s, color 0.3s;
 }
 
-
 nav a:hover {
   background-color: var(--accent-color);
   color: #fff;
 }
-
 
 nav a[aria-current='page'] {
   color: var(--nav-link-current-color);
   background-color: var(--nav-link-current-bg);
 }
 
-
 main {
   padding: 1rem;
+  text-align: center;
 }
 
 h1 {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
-
 
 .flex-container {
   display: flex;
@@ -108,4 +105,54 @@ h1 {
   font-size: 16px;
   font-weight: bold;
   color: var(--text-color);
+}
+
+.featured-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f8fb;
+  padding: 30px;
+  margin: 40px auto;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.featured-img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.featured-desc {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.home-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+  background-color: var(--accent-color);
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+  border-top: 1px solid var(--nav-border-color);
 }
