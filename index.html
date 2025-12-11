@@ -4,14 +4,11 @@
     <title>Jay's Clothing | Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta
-      name="description"
-      content="Discover the latest from J’s Clothing — modern style made simple."
-    />
+    <meta name="description" content="Discover the latest from J’s Clothing — modern style made simple." />
     <link rel="stylesheet" href="styles.css" />
-      <link rel="icon" type="image/x-icon" href="images/favi.png" />
-
+    <link rel="icon" type="image/x-icon" href="images/favi.png" />
   </head>
+
   <body>
     <nav>
       <a href="index.html" aria-current="page">Home</a>
@@ -26,39 +23,41 @@
         <h2>Seal Team Six</h2>
       </header>
 
-      
-
       <section class="featured-product">
         <img src="images/Seal Team 6.png" alt="Thug Tee" class="featured-img" />
-        <button class="home-btn" onclick="location.href='shop.html'">
-          Shop Now
-        </button>
+        <button class="home-btn" onclick="location.href='shop.html'">Shop Now</button>
       </section>
-      
-      
+
       <section class="featured-product">
         <img src="images/Swag Tee.png" alt="Swag & Thug Tee" class="featured-img" />
-        <button class="home-btn" onclick="location.href='shop.html'">
-          Shop Now
-
-
-        </button>
+        <button class="home-btn" onclick="location.href='shop.html'">Shop Now</button>
       </section>
-       <form id="Number">
-        <label for="Number">Phone Number:</label>
-        <input type="tel" id="Number" name="phoneNumber" placeholder=" Ex; 123-456-7890" required>
-        <button type="submit">Submit</button>
-    </form>
-     <form id="emailform">
-        <label for="emailform">Email Subscription:</label>
-        <input type="email" id="Email" name="emailform" placeholder=" Ex; abcdefghijk@gmail.com" required>
-        <button type="submit" onclick="blake()">Submit</button>
-    </form>
-    <script>
-      function blake() {
-        alert("sign up")
-      }
-    </script>
+
+      <form id="phoneForm">
+        <label for="phoneInput">Phone Number:</label>
+        <input type="tel" id="phoneInput" name="phoneNumber" placeholder="Ex: 123-456-7890" required>
+        <button type="button" onclick="showPhone()">Submit</button>
+      </form>
+
+     
+      <form id="emailForm">
+        <label for="emailInput">Email Subscription:</label>
+        <input type="email" id="emailInput" name="emailform" placeholder="Ex: abcdefghijk@gmail.com" required>
+        <button type="button" onclick="showEmail()">Submit</button>
+      </form>
+
+      <script>
+        function showPhone() {
+          let phone = document.getElementById("phoneInput").value;
+          alert("Phone number entered: " + phone);
+        }
+
+        function showEmail() {
+          let email = document.getElementById("emailInput").value;
+          alert("Email entered: " + email);
+        }
+      </script>
+
     </main>
   </body>
 </html>
