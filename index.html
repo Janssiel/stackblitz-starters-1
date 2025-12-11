@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Jay's Clothing | Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="Discover the latest from J’s Clothing — modern style made simple." />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/x-icon" href="images/favi.png" />
-  </head>
 
-  <body>
-    <nav>
-      <a href="index.html" aria-current="page">Home</a>
-      <a href="shop.html">Shop</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+<head>
+  <title>Jay's Clothing | Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="description" content="Discover the latest from J’s Clothing — modern style made simple." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="images/favi.png" />
+</head>
 
-    <main>
-      <header>
-        <h1>Latest Product Drop</h1>
-        <h2>Seal Team Six</h2>
-      </header>
+<body>
+  <nav>
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
+  <main>
+    <header>
+      <h1>Latest Product Drop</h1>
+      <h2>Seal Team Six</h2>
+    </header>
+    <div class="products">
       <section class="featured-product">
         <img src="images/Seal Team 6.png" alt="Thug Tee" class="featured-img" />
         <button class="home-btn" onclick="location.href='shop.html'">Shop Now</button>
@@ -32,32 +33,38 @@
         <img src="images/Swag Tee.png" alt="Swag & Thug Tee" class="featured-img" />
         <button class="home-btn" onclick="location.href='shop.html'">Shop Now</button>
       </section>
+    </div>
 
-      <form id="phoneForm">
+
+
+
+    <form>
+      <div>
         <label for="phoneInput">Phone Number:</label>
         <input type="tel" id="phoneInput" name="phoneNumber" placeholder="Ex: 123-456-7890" required>
         <button type="button" onclick="showPhone()">Submit</button>
-      </form>
 
-     
-      <form id="emailForm">
+      </div>
+      <div>
         <label for="emailInput">Email Subscription:</label>
         <input type="email" id="emailInput" name="emailform" placeholder="Ex: abcdefghijk@gmail.com" required>
         <button type="button" onclick="showEmail()">Submit</button>
-      </form>
+      </div>
+    </form>
 
-      <script>
-        function showPhone() {
-          let phone = document.getElementById("phoneInput").value;
-          alert("Phone number entered: " + phone);
-        }
+    <script>
+      function showPhone() {
+        let phone = document.getElementById("phoneInput").value;
+        alert("Phone number entered: " + phone);
+      }
 
-        function showEmail() {
-          let email = document.getElementById("emailInput").value;
-          alert("Email entered: " + email);
-        }
-      </script>
+      function showEmail() {
+        let email = document.getElementById("emailInput").value;
+        alert("Email entered: " + email);
+      }
+    </script>
 
-    </main>
-  </body>
+  </main>
+</body>
+
 </html>
