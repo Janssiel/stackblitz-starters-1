@@ -10,6 +10,19 @@
   --nav-border-color: #aaa;
 }
 
+/* used ai for the smooth transitioning sorry */
+body.dark-mode {
+  --primary-color: #333;
+  --secondary-color: #444;
+  --accent-color: #666;
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --nav-link-color: #ffffff;
+  --nav-link-current-bg: #666;
+  --nav-link-current-color: #ffffff;
+  --nav-border-color: #555;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -19,6 +32,7 @@ body {
   font-family: system-ui, sans-serif;
   color: var(--text-color);
   background-color: var(--background-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 nav {
@@ -119,13 +133,13 @@ h1 {
   min-width: 200px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 .products {
   display: flex;
   flex-direction: row;
   width: 100%; 
   gap: 1rem;
   flex-wrap: wrap;
-
 }
 
 .featured-img {

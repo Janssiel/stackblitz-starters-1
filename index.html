@@ -18,6 +18,9 @@
     <a href="contact.html">Contact</a>
   </nav>
 
+  
+  <button id="darkModeToggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
   <main>
     <header>
       <h1>Latest Product Drop</h1>
@@ -35,15 +38,11 @@
       </section>
     </div>
 
-
-
-
     <form>
       <div>
         <label for="phoneInput">Phone Number:</label>
         <input type="tel" id="phoneInput" name="phoneNumber" placeholder="Ex: 123-456-7890" required>
         <button type="button" onclick="showPhone()">Submit</button>
-
       </div>
       <div>
         <label for="emailInput">Email Subscription:</label>
@@ -61,6 +60,10 @@
       function showEmail() {
         let email = document.getElementById("emailInput").value;
         alert("Email entered: " + email);
+      }
+
+      function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
       }
     </script>
 
