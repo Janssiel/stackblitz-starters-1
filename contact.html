@@ -4,14 +4,11 @@
     <title>Jay's Clothing | Contact</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta
-      name="description"
-      content="Contact J’s Clothing for questions or support."
-    />
+    <meta name="description" content="Get in touch with us at Jay's Clothing." />
     <link rel="stylesheet" href="styles.css" />
-          <link rel="icon" type="image/x-icon" href="images/favi.png" />
-
+    <link rel="icon" type="image/x-icon" href="images/favi.png" />
   </head>
+
   <body>
     <nav>
       <a href="index.html">Home</a>
@@ -24,6 +21,29 @@
       <header>
         <h1>Contact Us</h1>
       </header>
+
+      <section class="contact-form">
+        <h2>Get in Touch</h2>
+        <form action="#" method="POST">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required />
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </section>
     </main>
+
+    <footer>
+      <p>&copy; 2025 Jay's Clothing
+    </footer>
   </body>
 </html>
